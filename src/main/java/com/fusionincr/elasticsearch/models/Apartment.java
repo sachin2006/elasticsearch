@@ -9,6 +9,7 @@ public class Apartment {
     private String apartmentName;
     private String email;
     private String contactNumber;
+    private String imageUrl;
 
     public Apartment() {
     }
@@ -43,12 +44,17 @@ public class Apartment {
         return contactNumber;
     }
 
-    @Override
-    public String toString() {
-        return "Apartment{" +
-                "apartmentName='" + apartmentName + '\'' +
-                ", email='" + email + '\'' +
-                ", contactNumber='" + contactNumber + '\'' +
-                '}';
-    }
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
+
+	@Override
+	public String toString() {
+		return "Apartment [apartmentName=" + apartmentName + ", email=" + email + ", contactNumber=" + contactNumber
+				+ ", imageUrl=" + imageUrl + "]";
+	}
 }
